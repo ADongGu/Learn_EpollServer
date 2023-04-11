@@ -7,7 +7,7 @@
 
 	
 
-
+```
 
 ngx_read_request_handler													//读操作
 	void ngx_wait_request_handler_proc_p1(lpngx_connection_t pConn,bool &isflood); 		//包头收完整后的处理，我们称为包处理阶段1：写成函数，方便复用
@@ -29,3 +29,4 @@ ngx_write_request_handler													//写操作
 		void* CSocekt::ServerSendQueueThread(void* threadData)						//专门用来发送数据的线程
 		sem_wait(&pSocketObj->m_semEventSendQueue)								//等待触发
           	sendsize = pSocketObj->sendproc(p_Conn,p_Conn->psendbuf,p_Conn->isendlen); //注意参数
+```
